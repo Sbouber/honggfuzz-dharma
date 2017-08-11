@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt-get install python2.7-dev clang-4.0 libbfd-dev ibunwind-dev libunwind8-dev libblocksruntime-dev
+apt-get install python2.7-dev clang-4.0 libbfd-dev libunwind-dev libunwind8-dev libblocksruntime-dev
 git clone https://github.com/google/honggfuzz.git tools/honggfuzz
 git clone https://github.com/MozillaSecurity/dharma.git tools/dharma
 cp -R tools/dharma/dharma/core .
