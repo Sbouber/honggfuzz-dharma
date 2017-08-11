@@ -57,6 +57,8 @@ void mangle_mangleContent(honggfuzz_t * hfuzz, fuzzer_t * fuzzer)
       return;
    }
 
+   fuzzer->dynamicFileSz = len + 1;
+
    memmove(&fuzzer->dynamicFile[0], tc, len + 1);
 
 }
